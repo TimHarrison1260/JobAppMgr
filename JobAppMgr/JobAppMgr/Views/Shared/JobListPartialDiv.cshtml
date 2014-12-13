@@ -1,0 +1,54 @@
+﻿@model IEnumerable<JobAppMgr.ViewModels.JobListViewModel>
+
+<div class="table">
+    <div class="tableHeader">
+        <div class ="tableColumnHeader" >
+            @Html.DisplayNameFor(model => model.Title)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.StatusName)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.ClosingDate)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.Location)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.AgencyName)
+        </div>
+        <div class="tableColumnHeader"></div>
+    </div>
+
+@foreach (var item in Model) {
+    <div class="tableRow">
+        <div class="tableColumn">
+            @Html.HiddenFor(modelItem => item.Id)
+            @Html.ActionLink(item.Title, "Details", "Job", new { id = item.Id }, new { Title = "View details of Job Application"})
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(modelItem => item.StatusName)
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(modelItem => item.ClosingDate)
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(modelItem => item.Location)
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(modelItem => item.CompanyName)
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(modelItem => item.AgencyName)
+        </div>
+        <div class="tableColumn">
+            @Html.ActionLink("Edit", "Edit", "Job", new { id = item.Id }, new { Title = "Edit the Job Application" }) |
+            @Html.ActionLink("Add Event", "AddEvent", "Job", new { id = item.Id }, new { Title = "Add an event to the Job Application" })
+        </div>
+    </div>
+}
+
+</div>

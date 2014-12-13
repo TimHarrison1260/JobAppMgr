@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2014-11-26T17:32:18" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '5b103670-e18c-4683-9f17-e983147b0364' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::Core' -  (Package)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::Core::Model' -  (Package)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Medium" Text="Element reverse engineered into the UML model: 'UmlDiagrams::Core::Model::Event' -  (Class)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::Core::Model::Event::Attachments' -  (Property)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::Core::Model::Event::Date' -  (Property)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::Core::Model::Event::Details' -  (Property)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::Core::Model::Event::Event' -  (Operation)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::Core::Model::Event::Id' -  (Property)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::Core::Model::Event::JobApplication' -  (Property)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::Core::Model::Event::Type' -  (Property)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::Core::Model::EventType' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::Core::Model::JobApplication' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::System' -  (Package)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::System::Collections' -  (Package)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::System::Collections::Generic::IEnumerable' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'UmlDiagrams::System::Collections::Generic::IEnumerable&lt;String‎&gt;' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: UmlDiagrams::Core::Model::Event to UmlDiagrams::System::Collections::Generic::IEnumerable&lt;String‎&gt; (Association)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: UmlDiagrams::Core::Model::Event to UmlDiagrams::Core::Model::JobApplication (Association)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: UmlDiagrams::Core::Model::Event to UmlDiagrams::Core::Model::EventType (Association)" />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="High" Text="(4) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2014-11-26T17:32:19" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

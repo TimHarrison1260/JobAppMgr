@@ -1,0 +1,42 @@
+﻿@model JobAppMgr.ViewModels.JobEditViewModel
+
+@{
+    ViewBag.Title = "Edit Job Application: ";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+        </div>
+    </section>
+}
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @* Set True means only errors not associated with a specific fieldname 
+        are displayed.  Setting it to False, means ALL errors are displayed  *@
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>CompanyViewModel</legend>
+
+        @Html.HiddenFor(model => model.Id)
+        
+        @Html.Partial("JobEditFieldsPartial")
+        
+        <div class="linkButton">
+            <p>
+                <input type="submit" value="Save" />
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div>
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")  @*where Javascript used for Validation, nice and fluid*@
+}

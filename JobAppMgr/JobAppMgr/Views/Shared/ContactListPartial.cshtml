@@ -1,0 +1,32 @@
+﻿@model IEnumerable<JobAppMgr.ViewModels.ContactViewModel>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @* Use overload that allows the controller to be specified.
+                NB!  MUST include the HtmlArguments parameter at the 
+                end to ensure the correct overload is used and therefore
+                the reference is resolved correctly. 
+                This ensures that the link points to the /Contact/Edit/id,
+                even from the Company or Agency Details page.
+                *@
+            @Html.ActionLink(item.Name, "Edit", "Contact", new { id = item.Id }, null)
+            @*@Html.DisplayFor(modelItem => item.Name)*@
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+    </tr>
+}
+
+</table>

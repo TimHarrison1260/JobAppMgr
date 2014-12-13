@@ -1,0 +1,45 @@
+﻿@model JobAppMgr.ViewModels.CompanyViewModel
+
+@{
+    //  TODO: refactor this to move the field contents to OrganisationDetailsPartial view.
+}
+<fieldset>
+    <legend>CompanyViewModel</legend>
+    
+    <div class="display-background">
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.Name)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Name)
+        </div>
+    </div>
+    
+    <div class="display-alt-background">
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.Address)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Address)
+        </div>
+    </div>
+    
+    <div class="display-background">
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.PostCode)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.PostCode)
+        </div>
+    </div>
+    
+    <div class="display-alt-background">
+        <div class="display-label">
+            @Html.LabelFor(model => model.Contacts)
+        </div>
+        <div class="display-field">
+            @Html.Partial("ContactListPartial", Model.Contacts)
+        </div>
+    </div>
+
+</fieldset>

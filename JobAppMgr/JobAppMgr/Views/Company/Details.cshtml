@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Company Details: ";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+        </div>
+    </section>
+}
+
+<div>
+    @Html.Partial("CompanyDetailsPartial")
+</div>
+<div class="linkButton">
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

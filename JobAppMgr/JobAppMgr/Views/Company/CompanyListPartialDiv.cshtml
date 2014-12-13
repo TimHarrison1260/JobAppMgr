@@ -1,0 +1,39 @@
+﻿@model IEnumerable<JobAppMgr.ViewModels.CompanyListViewModel>
+
+@{
+    //  TODO: refactor this to move the field contents to OrganisationListPartial view.
+}
+<div class="table">
+    <div class="tableHeader">
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.Name)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.Address)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.PostCode)
+        </div>
+        <div class="tableColumnHeader"></div>
+    </div>
+
+@foreach (var item in Model) {
+    <div class="tableRow">
+        <div class="tableColumn">
+            @Html.ActionLink(item.Name, "Details", new { id = item.Id })
+            @*@Html.DisplayFor(modelItem => item.Name)*@
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(modelItem => item.Address)
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(modelItem => item.PostCode)
+        </div>
+        <div class="tableColumn">
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) | 
+            @Html.ActionLink("Add Contact", "AddContact", new { id=item.Id})
+        </div>
+    </div>
+}
+
+</div>

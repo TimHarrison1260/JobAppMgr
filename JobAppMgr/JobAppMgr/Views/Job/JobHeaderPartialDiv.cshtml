@@ -1,0 +1,46 @@
+﻿@model JobAppMgr.ViewModels.JobListViewModel
+
+<div class="table">
+    <div class="tableHeader">
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.Title)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.StatusName)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.ClosingDate)
+        </div>
+        <dic class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.Location)
+        </dic>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.AgencyName)
+        </div>
+    </div>
+
+    <div class="tableRow">
+        <div class="tableColumn">
+            @Html.DisplayFor(model => model.Title)
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(model => model.StatusName)
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(model => model.ClosingDate)
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(model => model.Location)
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(model => model.CompanyName)
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(model => model.AgencyName)
+        </div>
+    </div>
+
+</div>

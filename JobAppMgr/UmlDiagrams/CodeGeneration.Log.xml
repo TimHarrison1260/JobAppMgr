@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2014-11-24T15:41:38" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2014-11-24T15:41:38" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2014-11-24T15:41:38" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2014-11-24T15:41:38" Importance="Diagnostic" Text="ProjectPath = ..\Core\Core.csproj" />
+  <Message Timestamp="2014-11-24T15:41:38" Importance="Diagnostic" Text="TargetDirectory = Model\{PackageStructure}" />
+  <Message Timestamp="2014-11-24T15:41:38" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2014-11-24T15:41:38" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2014-11-24T15:41:38" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2014-11-24T15:41:38" Importance="Medium" Text="UmlDiagrams's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'UmlDiagrams::JobApplication' -  (Class), 'UmlDiagrams::Status' -  (Class), 'UmlDiagrams::EventType' -  (Class), 'UmlDiagrams::Event' -  (Class), 'UmlDiagrams::Company' -  (Class), 'UmlDiagrams::Agency' -  (Class), 'UmlDiagrams::ContactDetails' -  (Class), 'UmlDiagrams::Contact' -  (Class) " />
+  <Message Timestamp="2014-11-24T15:41:55" Importance="Medium" Text="'UmlDiagrams::JobApplication' -  (Class) : success (file created) - d:\users\tim.cauldstanes\documents\visual studio 2013\Projects\JobAppMgr\Core\Model\JobApplication.cs" />
+  <Message Timestamp="2014-11-24T15:41:57" Importance="Medium" Text="'UmlDiagrams::Status' -  (Class) : success (file created) - d:\users\tim.cauldstanes\documents\visual studio 2013\Projects\JobAppMgr\Core\Model\Status.cs" />
+  <Message Timestamp="2014-11-24T15:41:59" Importance="Medium" Text="'UmlDiagrams::EventType' -  (Class) : success (file created) - d:\users\tim.cauldstanes\documents\visual studio 2013\Projects\JobAppMgr\Core\Model\EventType.cs" />
+  <Message Timestamp="2014-11-24T15:42:00" Importance="Medium" Text="'UmlDiagrams::Event' -  (Class) : success (file created) - d:\users\tim.cauldstanes\documents\visual studio 2013\Projects\JobAppMgr\Core\Model\Event.cs" />
+  <Message Timestamp="2014-11-24T15:42:01" Importance="Medium" Text="'UmlDiagrams::Company' -  (Class) : success (file created) - d:\users\tim.cauldstanes\documents\visual studio 2013\Projects\JobAppMgr\Core\Model\Company.cs" />
+  <Message Timestamp="2014-11-24T15:42:02" Importance="Medium" Text="'UmlDiagrams::Agency' -  (Class) : success (file created) - d:\users\tim.cauldstanes\documents\visual studio 2013\Projects\JobAppMgr\Core\Model\Agency.cs" />
+  <Message Timestamp="2014-11-24T15:42:03" Importance="Medium" Text="'UmlDiagrams::ContactDetails' -  (Class) : success (file created) - d:\users\tim.cauldstanes\documents\visual studio 2013\Projects\JobAppMgr\Core\Model\ContactDetails.cs" />
+  <Message Timestamp="2014-11-24T15:42:04" Importance="Medium" Text="'UmlDiagrams::Contact' -  (Class) : success (file created) - d:\users\tim.cauldstanes\documents\visual studio 2013\Projects\JobAppMgr\Core\Model\Contact.cs" />
+  <Message Timestamp="2014-11-24T15:42:04" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2014-11-24T15:42:04" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2014-11-24T15:42:04" Importance="Diagnostic" Text="ProjectPath = ..\Core\Core.csproj" />
+  <Message Timestamp="2014-11-24T15:42:04" Importance="Diagnostic" Text="TargetDirectory = Model\{PackageStructure}" />
+  <Message Timestamp="2014-11-24T15:42:04" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2014-11-24T15:42:04" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2014-11-24T15:42:04" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2014-11-24T15:42:04" Importance="Medium" Text="UmlDiagrams's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'UmlDiagrams::JobApplication' -  (Class), 'UmlDiagrams::Status' -  (Class), 'UmlDiagrams::EventType' -  (Class), 'UmlDiagrams::Event' -  (Class), 'UmlDiagrams::Company' -  (Class), 'UmlDiagrams::Agency' -  (Class), 'UmlDiagrams::ContactDetails' -  (Class), 'UmlDiagrams::Contact' -  (Class) " />
+  <Message Timestamp="2014-11-24T15:42:06" Importance="Diagnostic" Text="'UmlDiagrams::JobApplication' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2014-11-24T15:42:06" Importance="Diagnostic" Text="'UmlDiagrams::Status' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2014-11-24T15:42:07" Importance="Diagnostic" Text="'UmlDiagrams::EventType' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2014-11-24T15:42:07" Importance="Diagnostic" Text="'UmlDiagrams::Event' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2014-11-24T15:42:07" Importance="Diagnostic" Text="'UmlDiagrams::Company' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2014-11-24T15:42:07" Importance="Diagnostic" Text="'UmlDiagrams::Agency' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2014-11-24T15:42:08" Importance="Diagnostic" Text="'UmlDiagrams::ContactDetails' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2014-11-24T15:42:08" Importance="Diagnostic" Text="'UmlDiagrams::Contact' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2014-11-24T15:42:09" Importance="Diagnostic" Text="The selection included 8 elements which were not bound to a template." />
+  <Message Timestamp="2014-11-24T15:42:09" Importance="Diagnostic" Text="'UmlDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2014-11-24T15:42:09" Importance="Diagnostic" Text="'UmlDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2014-11-24T15:42:09" Importance="Diagnostic" Text="'UmlDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2014-11-24T15:42:09" Importance="Diagnostic" Text="'UmlDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2014-11-24T15:42:09" Importance="Diagnostic" Text="'UmlDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2014-11-24T15:42:09" Importance="Diagnostic" Text="'1f79f6a8-ec57-48cb-b6cd-4b6a42d88aa2' -  (Generalization): no bound template." />
+  <Message Timestamp="2014-11-24T15:42:09" Importance="Diagnostic" Text="'2aabf24c-e7b4-4ddc-b276-0b288dcd0d30' -  (Generalization): no bound template." />
+  <Message Timestamp="2014-11-24T15:42:09" Importance="Diagnostic" Text="'UmlDiagrams::' -  (Association): no bound template." />
+  <Message Timestamp="2014-11-24T15:42:09" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

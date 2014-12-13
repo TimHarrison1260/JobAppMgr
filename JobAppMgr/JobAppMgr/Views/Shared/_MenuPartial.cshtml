@@ -1,0 +1,45 @@
+﻿@using System.Activities.Expressions
+<nav id="cssmenu">
+    <ul>
+        <li id="Home">@Html.ActionLink("Home", "Index", "Home", null, new { Title = "Return to the Home page" })</li>
+        <li class="has-sub">
+            @Html.ActionLink("Applications", "Index", "Job", null, new { Title = "List all Job Applications"})
+        </li>
+        <li class="has-sub">
+            <a id="h" href="">
+                <span title="Organisations">Organisations</span>
+            </a>
+            <ul>
+                <li class="has-sub">
+                    <a id="h" href="">
+                        <span title="Companies">Companies</span>
+                    </a>
+                    <ul>
+                        <li>@Html.ActionLink("List", "Index", "Company", null, new { Title = "Show List a Companies" })</li>
+                        <li>@Html.ActionLink("Create", "Create", "Company", null, new { Title = "Create a new company" })</li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a id="h" href="">
+                        <span title="Agencies">Agencies</span>
+                    </a>
+                    <ul>
+                        <li>@Html.ActionLink("List", "Index", "Agency", null, new { Title = "Show a list of Agencies" })</li>
+                        <li>@Html.ActionLink("Create", "Create", "Agency", null, new { Title = "Create a new Agency" })</li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a id="h" href="">
+                        <span title="Work with Contacts">Contacts</span>
+                    </a>
+                    <ul>
+                        <li>@Html.ActionLink("List", "Index", "Contact", null, new { Title = "Show a list of contacts that belong to the Organisations" })</li>
+                        <li>@Html.ActionLink("Create", "Create", "Contact", null, new { Title = "Create a new Contact" })</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>@Html.ActionLink("About", "About", "Home", null, new { Title = "Website Details" })</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { Title = "Contact the Authors of the Website" })</li>
+    </ul>
+</nav>

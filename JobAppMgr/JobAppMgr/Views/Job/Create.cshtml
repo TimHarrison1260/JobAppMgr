@@ -1,0 +1,39 @@
+﻿@model JobAppMgr.ViewModels.JobEditViewModel
+
+@{
+    ViewBag.Title = "Create Company: ";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+        </div>
+    </section>
+}
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>CompanyViewModel</legend>
+        
+        @Html.Partial("JobEditFieldsPartial")
+        
+        <div class="linkButton">
+            <p>
+                <input type="submit" value="Create" />
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div>
+    </fieldset>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

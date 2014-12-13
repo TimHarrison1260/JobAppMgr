@@ -1,0 +1,54 @@
+﻿@model IEnumerable<JobAppMgr.ViewModels.JobListViewModel>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatusName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClosingDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AgencyName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.HiddenFor(modelItem => item.Id)
+            @Html.ActionLink(item.Title, "Details", "Job", new { id = item.Id }, new { Title = "View details of Job Application"})
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatusName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClosingDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AgencyName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", "Job", new { id=item.Id }, new { Title = "Edit the Job Application"}) |
+            @Html.ActionLink("Add Event", "AddEvent", "Job", new { id=item.Id }, new { Title = "Add an event to the Job Application"})
+        </td>
+    </tr>
+}
+
+</table>

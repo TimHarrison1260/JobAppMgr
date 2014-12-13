@@ -1,0 +1,94 @@
+﻿@using System.Web.UI.WebControls
+@model JobAppMgr.ViewModels.AddJobApplicationEventViewModel
+
+@{
+    ViewBag.Title = "Add Event: ";
+}
+
+@{
+    object msg = string.Empty;
+    TempData.TryGetValue("Msg", out msg);
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+        </div>
+    </section>
+}
+
+@if (!string.IsNullOrEmpty(msg as string))
+{
+    <h5>@msg</h5>
+}
+
+@using (Html.BeginForm("AddEvent","Job",FormMethod.Post,new{enctype="multipart/form-data"}))
+{
+    @*@Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)*@
+
+    <fieldset>
+        <legend>AddJobApplicationEventViewModel</legend>
+        
+        @Html.HiddenFor(model => model.JobApplication.Id)
+
+        @* Display the Job header information and the existing events *@
+        @Html.Partial("JobHeaderPartialDiv", Model.JobApplication)        
+        @Html.Partial("JobEventsListPartialDiv", Model.Events)
+        
+        @* Add the edit fields for the New Event *@
+        @*@Html.Partial("JobEventEditPartial", Model.NewEvent)*@
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NewEvent.Date)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NewEvent.Date)
+            @Html.ValidationMessageFor(model => model.NewEvent.Date)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NewEvent.Details)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NewEvent.Details)
+            @Html.ValidationMessageFor(model => model.NewEvent.Details)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NewEvent.Attachment)
+        </div>
+        <div>
+            @*@Html.EditorFor(model => model.NewEvent.Attachment)*@
+            <input type="file" id="NewEvent_Attachment" name="NewEvent.Attachment" />
+            @Html.ValidationMessageFor(model => model.NewEvent.Attachment)
+        </div>
+        
+        
+        @* Dropdown list for the Event Type, populated with next event types allowed *@
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NewEvent.EventTypeId)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.NewEvent.EventTypeId, Model.PossibleEventTypes, "Please select an Event Type....")
+            @Html.ValidationMessageFor(model => model.NewEvent.EventTypeId)
+        </div>
+        
+        <div class="linkButton">
+            <p>
+                <br/>
+                <input type="submit" value="Add" />
+                @Html.ActionLink("Finished", "Index")
+            </p>
+        </div>
+    </fieldset>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

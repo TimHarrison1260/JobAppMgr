@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+        </div>
+    </section>
+}
+
+<div >
+    @Html.Partial("JobListPartialDiv")
+</div>
+
+<div class="linkButton">
+    <p>
+        @Html.ActionLink("Create New", "Create", "Job", null, new {})
+    </p>
+</div>

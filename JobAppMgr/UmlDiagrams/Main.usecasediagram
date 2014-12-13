@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e21b4e5f-1d4b-413a-ab4b-6082678dc690" name="Main" linkedPackageId="571385b8-b34b-41ea-b6f1-2b0e0fbfcc15" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="0d3b0c1d-f750-4194-afe6-c99ca21706d0" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="e65a42ff-34c8-4dd6-b40b-5b264c91432e" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="aba383df-03b5-4887-a2c6-9e3a596fdb82">
+          <propertyInstance Id="89099e03-dfc5-44e9-9c8d-223567c18c16" name="BaseName">
+            <elementDefinition Id="a1a43498-cdb4-492d-90a9-7fc907ba83ee" />
+          </propertyInstance>
+          <elementDefinition Id="36634a28-0b63-457e-844b-d57f0ffac993" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="75625ff8-0bb2-423c-b3ef-54518921572d">
+          <propertyInstance Id="010c1d0b-b27c-4aa0-b277-d08d4658281b" name="ClrAttributes">
+            <elementDefinition Id="97b5a75a-f7ba-48ef-a7a3-019e7fc70e3d" />
+          </propertyInstance>
+          <elementDefinition Id="4fb33756-a106-4737-83e3-414c273a1bd2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="46293cf4-00bf-48be-bdc7-55f5b256eab8">
+          <propertyInstance Id="dd27ad71-e50c-4fdb-9182-790ee00d67a0" name="Usings">
+            <elementDefinition Id="c6e49005-9c85-44ec-8382-92aaa2e8cbba" />
+          </propertyInstance>
+          <elementDefinition Id="3f731cba-b414-4b29-82a2-435d95cf0330" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="bd939e89-ade9-4f76-b295-d32679a25309" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="694ebf45-e72e-4681-9e3e-d1dce57d5bbf" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6fe161ef-8607-4f0b-b59a-3e16775c1401">
+          <propertyInstance Id="f95ab8e9-faab-493b-91e2-27a0da45d20d" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="31c4d410-2f79-4fed-9c51-87fa7f21829d" />
+          </propertyInstance>
+          <elementDefinition Id="68f46cbf-eb7a-4386-8b17-d6c9bb6a79d0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="48a029bc-fa63-4957-ba0f-ca88b7b2f340">
+          <propertyInstance Id="7b4eadae-a3bd-4836-970e-a5b65122c27f" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="d58a1663-9d55-4f36-aa99-a0ac5ccf8193" />
+          </propertyInstance>
+          <elementDefinition Id="61a2ac13-0be2-4d82-8a31-3c31872a0d04" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="898c5895-2d08-4f4f-9b96-1ab05b0616e8">
+          <propertyInstance Id="d50aa967-dc2a-4c41-841d-ce6ca8130cbf" name="ProjectPath" value="ClassTemplate=..\Core\Core.csproj|EnumTemplate=..\Core\Core.csproj|InterfaceTemplate=..\Core\Core.csproj|StructTemplate=..\Core\Core.csproj">
+            <elementDefinition Id="7db70173-b699-46c1-9628-471c903cde8f" />
+          </propertyInstance>
+          <elementDefinition Id="d1263ef7-b134-4d31-9b6c-b4cc0eb58bb5" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="dc6f1961-8766-415f-88a3-f565f9747567">
+          <propertyInstance Id="6dc21b9e-7651-4bef-8e27-baaef47a0f3d" name="TargetDirectory" value="ClassTemplate=Model\{PackageStructure}|EnumTemplate=Model\{PackageStructure}|InterfaceTemplate=Interfaces\{PackageStructure}|StructTemplate=Model\{PackageStructure}">
+            <elementDefinition Id="b1bb17b4-07b0-42f7-826d-c1c827f5259f" />
+          </propertyInstance>
+          <elementDefinition Id="7060a455-e6a1-4ea9-831e-e37c7cbdcf87" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4402cd0e-3cdd-4692-8d09-8d955a32076d">
+          <propertyInstance Id="ec0e6904-7d67-433d-9ed9-c024580eac94" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c74cacd8-8357-4f40-beb8-7674072e5e95" />
+          </propertyInstance>
+          <elementDefinition Id="3aa9d6cf-eb88-4147-a810-0fc94450f96b" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1ffc08e1-81a4-4e85-8ca2-bfc258fb9068">
+          <propertyInstance Id="e24709a9-f7a1-4528-bb9c-ac3a128e55fd" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="7e65ea6c-1ed3-49cc-ac83-9aa1b6cead88" />
+          </propertyInstance>
+          <elementDefinition Id="c15a3dc5-53f1-4d56-9d87-0422f6e88bab" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6a5c3b90-9792-49d8-80be-56dcd3cb19f2">
+          <propertyInstance Id="faceb395-184f-4e1a-a3ab-1dff210d9572" name="Parameters">
+            <elementDefinition Id="008988ee-60d3-4a3c-ab8e-a1bb9bdf80b5" />
+          </propertyInstance>
+          <elementDefinition Id="cd790a61-2246-4351-a5f5-16721c1c7ca7" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="0a977394-aab3-4f1a-8cc5-7d842667b4b8">
+      <profileInstance Id="37f6808f-4c32-439f-9f4f-f2e950d72bbd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e536f34c-b163-4aae-9bc9-1027339f9a67">
+      <profileInstance Id="a56d5c15-a75a-41b7-9485-863b269cf927" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7341bc04-bd54-47ee-aa90-8d69a085e580">
+      <profileInstance Id="5a2cc609-9619-48e3-afa7-3e89ede94976" name="CSharpProfile">
+        <elementDefinition Id="79bd7bd5-45aa-44ef-8f9c-1930f75d6471" />
+      </profileInstance>
+      <elementDefinition Id="9061e6b9-a9a9-4f27-bed8-96ccf0888700" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="110440f7-106e-4e9a-a456-41082aaa56ee">
+      <profileInstance Id="4b8ead3b-bb56-4e86-b57d-b37dd4edb506" name="TextTemplateBindings">
+        <elementDefinition Id="97a7953e-a1f9-4556-b0e2-8d76ff979275" />
+      </profileInstance>
+      <elementDefinition Id="2a585745-ac60-4c2d-9a90-274cbc0c60bd" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="441f2c2d-93e2-4771-8a44-2c77f4bbba70" name="Create Job Application" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="edd5a092-29fc-4946-b324-62e24ecc08ea" />
+        <extendedCases>
+          <extend Id="44e4636e-c016-44cc-8be7-f4f2127d72fb">
+            <useCaseMoniker Id="162fcddf-c440-4b97-8d60-93cf580b3e13" LastKnownName="Job Application" />
+            <elementDefinition Id="ccdf2778-92cf-4d97-a620-9ab8fd4da11f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4f140e36-ecec-4055-8720-bfce01021990" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1f8bd0e9-07b0-40bb-be2a-de4411647de4" />
+        <targetEnds>
+          <association Id="4b93f8c9-efe8-49f2-9147-054b963c8baa" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Create Job Application" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="441f2c2d-93e2-4771-8a44-2c77f4bbba70" LastKnownName="Create Job Application" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b04a8c82-0864-49bd-98c5-bce0fe2a58e7" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fefd7b26-383d-456a-9abd-6b4dfcac11ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a390edfa-b42c-4539-887f-ef9400462794" name="Create Job Application" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9230d4be-222c-4e43-8698-863e0c1e35f3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cad2bc9a-0972-475c-8ac9-0beb6df92711" />
+          </association>
+          <association Id="b07d3695-2c0e-45c0-84aa-869d8197bb7f" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add CV to Job App." isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7b22703e-6804-4632-8086-d4580b3d9594" LastKnownName="Attach CV" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95446f8d-82eb-468b-8a35-a9ed85e7568a" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="40ff2b45-5310-4c17-8eb6-4441e0100175" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9bc75642-21c5-426e-b90e-ce7739b21869" name="Add CV to Job App." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bad4a89c-d828-414f-a4d3-cb9820402ae9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ae144f9e-fd48-417c-841a-6f57ab59b68c" />
+          </association>
+          <association Id="29aaa21b-0596-47a7-bdb7-3b44873bc1db" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add letter toJob App." isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e2414d64-6748-4c74-95a7-989cc86f6191" LastKnownName="Attach Letter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ee28d58-9c02-4394-8311-ef431ba1e31f" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="10b5fb91-9fee-4cd4-bbbb-b4ec2c4ac39f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="521453b3-3bae-448a-9946-7c6674bc4d76" name="Add letter toJob App." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="62df896b-9058-4826-9e5d-f7e3996dffe2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="18c68f5b-9d7b-462c-9bfc-bfa1733df470" />
+          </association>
+          <association Id="5927f614-0d3f-49dd-91a3-124db08866ff" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add Agency to Job App." isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a295f2f1-f98b-4f23-8a6f-6a33b2ce3105" LastKnownName="Attach Agency" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="503dacc7-667b-40e1-ad9f-d41494293a6c" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7360c4e3-27ba-4a75-b529-ee04318dd0b8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="68698663-7906-4f65-a328-95b269bd48bb" name="Add Agency to Job App." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c06a69c8-3f72-4f2d-bd3e-6ab569e6a2a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="90c182dc-631d-4ee7-86f1-4a53c3210c1b" />
+          </association>
+          <association Id="10c2aa22-ef7c-498f-8f8c-a51d7056c6df" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add Company" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="462b995f-5711-4bf5-a14f-ab4faa1b06f1" LastKnownName="Attach Company" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b91fc385-d426-4b20-9666-621eb6006ead" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c6832609-1e80-4db6-935f-b62857e7c5ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5c120f77-4400-48ea-9fbb-f980a5fba78d" name="Add Company" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b2f65db3-37df-4b29-9987-ca81d802d384" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f9a61410-2726-40f2-9f0b-239d74d6ae23" />
+          </association>
+          <association Id="11edb423-ff67-42e0-8380-6509567b80cc" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add Event" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2d24110d-b496-4d5b-98e5-f701b4c2afb3" LastKnownName="Add Event" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a66ab1a-a2dc-4b74-ad82-930532510cc5" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="da4e76ea-e086-4b31-ac4d-70887b73adb1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b59535b3-f778-489e-85b8-98804990cf63" name="Add Event" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2df4841d-5a0b-4f1b-81ad-3fc62ad4ec1a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e0c7c8dc-fa6c-448a-8fb9-ce09cf930f3f" />
+          </association>
+          <association Id="a6c48e7c-3227-4280-83e4-8544ba4405a2" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Edit Job Application" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="13236deb-2206-4985-8ed1-35b6fd97c692" LastKnownName="Edit Job Application" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e122ddf5-e12d-4a92-92c9-fd69d0b6ec03" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1e8a2004-4098-490c-b8bb-a043ac864027" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9033b9f8-fa4e-417d-b8c8-c3b353e7ff25" name="Edit Job Application" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="905d2a0d-366a-4742-afaa-326d408bb732" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="00ec3cc8-e26d-40a6-8ed8-909b9574e238" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7b22703e-6804-4632-8086-d4580b3d9594" name="Attach CV" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e588899-78ad-4faa-a63e-63bd73c0f864" />
+        <extendedCases>
+          <extend Id="2e857d5b-80ef-4bb2-bda2-bf753637ef69">
+            <useCaseMoniker Id="162fcddf-c440-4b97-8d60-93cf580b3e13" LastKnownName="Job Application" />
+            <elementDefinition Id="8f6094e4-c3d7-452a-8fb7-c68215107e47" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e2414d64-6748-4c74-95a7-989cc86f6191" name="Attach Letter" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="37dd7276-8ced-453b-90cc-3c2ef8c53667" />
+        <extendedCases>
+          <extend Id="ed06dd22-994e-4deb-81ed-d92f7340a406">
+            <useCaseMoniker Id="162fcddf-c440-4b97-8d60-93cf580b3e13" LastKnownName="Job Application" />
+            <elementDefinition Id="75d799ff-fa8e-4933-90b5-86112b7cd039" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a295f2f1-f98b-4f23-8a6f-6a33b2ce3105" name="Attach Agency" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ad013564-3eeb-4b74-8701-49cf4127a631" />
+        <extendedCases>
+          <extend Id="5b6ab7bb-acfe-4249-9586-f3464cc12b76">
+            <useCaseMoniker Id="162fcddf-c440-4b97-8d60-93cf580b3e13" LastKnownName="Job Application" />
+            <elementDefinition Id="71dfa009-f7ff-4de9-9a58-270aa843390e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="462b995f-5711-4bf5-a14f-ab4faa1b06f1" name="Attach Company" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a338332b-15db-41cf-8dc0-44d0c8eedb94" />
+        <extendedCases>
+          <extend Id="3ec8b0e2-34ba-479b-8381-7072f1522bc7">
+            <useCaseMoniker Id="162fcddf-c440-4b97-8d60-93cf580b3e13" LastKnownName="Job Application" />
+            <elementDefinition Id="b11b6be9-1a54-4e36-8625-f732a04d1094" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2d24110d-b496-4d5b-98e5-f701b4c2afb3" name="Add Event" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3f321275-94b4-4c4a-a5e1-1d4f92baed36" />
+        <extendedCases>
+          <extend Id="9c6684ef-29f2-43cc-b74d-7f434e539948">
+            <useCaseMoniker Id="772eadab-fe9d-43ab-b795-93d312a285e7" LastKnownName="Update status" />
+            <elementDefinition Id="ad6c2118-29bf-4c7a-9cbd-702d31df65a7" />
+          </extend>
+          <extend Id="38fdf9cd-61be-464e-ad79-77b7e0da5dbf">
+            <useCaseMoniker Id="162fcddf-c440-4b97-8d60-93cf580b3e13" LastKnownName="Job Application" />
+            <elementDefinition Id="e9f6f0b6-51cc-4fce-8171-9c0e51ff6fc0" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1b5e03da-6447-416d-a3e3-753b2114d231" name="Create Company" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b287db8f-23a2-4005-a333-eda5114ee753" />
+        <extendedCases>
+          <extend Id="4d22216e-a38d-4630-bb9e-7b9dd661b874">
+            <useCaseMoniker Id="c1d2d614-14af-4696-b1ca-3ffa6775c5d4" LastKnownName="Company" />
+            <elementDefinition Id="56637add-f6c7-48ff-9088-95034dd1c1b5" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="de1cdf71-f42a-453a-b258-7cecc9bf1d48" name="Create Agency" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="409c8989-70e2-409d-8304-7dc9f0a97571" />
+        <extendedCases>
+          <extend Id="976efb71-19b6-48f6-9c3a-e117896a2adc">
+            <useCaseMoniker Id="a73e5e2f-2351-499c-bde9-40ba45ceed67" LastKnownName="Agency" />
+            <elementDefinition Id="4db1bad6-608c-488b-8000-9cfdeed4816d" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="772eadab-fe9d-43ab-b795-93d312a285e7" name="Update status" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8bc0386-3b9f-40f4-a529-5b0bf56501b4" />
+        <extendedCases>
+          <extend Id="18bfaa17-caa9-435e-8773-1e375fdf311b">
+            <useCaseMoniker Id="162fcddf-c440-4b97-8d60-93cf580b3e13" LastKnownName="Job Application" />
+            <elementDefinition Id="01f84cbc-0cc6-43e0-8810-00dd77147b25" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="79ff7d0c-e284-4788-9245-46ab052eb333" name="Add Contact" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3241340f-3289-4c5d-a3f1-9cd1f90fb5fc" />
+        <extendedCases>
+          <extend Id="9a49d1bd-40b4-4653-bfa6-c39b4825a303">
+            <useCaseMoniker Id="a73e5e2f-2351-499c-bde9-40ba45ceed67" LastKnownName="Agency" />
+            <elementDefinition Id="54b54e96-c024-481a-966d-114fd8e2c39b" />
+          </extend>
+          <extend Id="4c92b5b2-41b4-437b-aae2-6bf892eac87d">
+            <useCaseMoniker Id="c1d2d614-14af-4696-b1ca-3ffa6775c5d4" LastKnownName="Company" />
+            <elementDefinition Id="cf84a326-e634-4473-9f82-1936005c3e15" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="13236deb-2206-4985-8ed1-35b6fd97c692" name="Edit Job Application" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e0b7374a-b75c-41e6-bcd9-c5c08671be0d" />
+        <extendedCases>
+          <extend Id="2f48d221-082c-4ad8-a0b3-969006a3e5ad">
+            <useCaseMoniker Id="162fcddf-c440-4b97-8d60-93cf580b3e13" LastKnownName="Job Application" />
+            <elementDefinition Id="780e0ff8-7069-49e5-b44a-ee3322924ca1" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c1d2d614-14af-4696-b1ca-3ffa6775c5d4" name="Company" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0cfbfc17-3c1d-4a40-8d68-6570407554d9" />
+        <additions>
+          <include Id="10ba74a8-3586-41c4-acf5-3e5152fb832e">
+            <useCaseMoniker Id="462b995f-5711-4bf5-a14f-ab4faa1b06f1" LastKnownName="Attach Company" />
+            <elementDefinition Id="88dae004-802b-4bcb-9d6f-73466dba03ce" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a73e5e2f-2351-499c-bde9-40ba45ceed67" name="Agency" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5651e784-b843-4f71-8a44-62b964fcb987" />
+        <additions>
+          <include Id="2616ecb4-5e5b-4502-9986-672a21750045">
+            <useCaseMoniker Id="a295f2f1-f98b-4f23-8a6f-6a33b2ce3105" LastKnownName="Attach Agency" />
+            <elementDefinition Id="50c6ff1c-a86c-4966-bc1b-35f402a2be0b" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="162fcddf-c440-4b97-8d60-93cf580b3e13" name="Job Application" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4487671-e631-49da-9220-7cd646098f9c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="710e88c3-358c-4924-990c-43aa3910bc4b" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f76f526-0c73-42a8-8f4c-e2de91ac6105" />
+        <targetEnds>
+          <association Id="389fc000-3472-4a91-a07e-50d3b5eb1c39" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Create Company" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1b5e03da-6447-416d-a3e3-753b2114d231" LastKnownName="Create Company" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="44c851fb-07e2-4839-9424-fd11ca3dc514" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9c304ba7-bd7a-4121-bc1d-84ffee20c08f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6321462a-0166-4712-baa6-13bcb6b79ff3" name="Create Company" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fb19a80e-7da6-40ae-b413-38d352b0cf56" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="24fbb6fa-8afd-47e9-b35b-dae1278a3ad8" />
+          </association>
+          <association Id="1b720ec8-97ab-473a-be8d-35ed6121071b" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Add Contact" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="79ff7d0c-e284-4788-9245-46ab052eb333" LastKnownName="Add Contact" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4c64992b-8b38-4b79-b425-405458dd6831" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="38018e3a-30bd-4fe3-a697-c3810638b26e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d16896c6-9bfa-47b5-82b1-580f1745e385" name="Add Contact" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f2a0673d-e378-4602-bbbc-ae37c4db6f2e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b723f2a0-675e-45c2-bbf1-668e5bc82145" />
+          </association>
+          <association Id="9ba9933f-8855-49a4-aeff-88209d68f1f7" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Create Agency" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="de1cdf71-f42a-453a-b258-7cecc9bf1d48" LastKnownName="Create Agency" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6d3eba1-a0e9-4c15-98ce-b3f609156f87" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="01b951bb-d547-46b9-b557-3914da428e44" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f17ef611-04c4-40d6-bb7b-14481c36d670" name="Create Agency" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="396e5cc8-a0ec-4382-a5dc-a3b568a804f9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f2cb558-e64b-4d24-9c38-b2e8d46c55b0" />
+          </association>
+          <association Id="54a66d36-5dbb-488e-8044-093b34c7d3f2" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Reset Status" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6bbdd2e7-ac40-45e2-b8f5-189c8a1d22b3" LastKnownName="Reset Status" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5c19851-f782-4014-81c3-93202d8a3c5d" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="84c4391f-3ed0-40ef-97ac-bd3fcba7adcd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9786ce9b-52a8-4d7e-aff8-7baa052c19f1" name="Reset Status" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2a65fad7-c9a4-4907-a7cd-a67bab724ce3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="47c23d58-8302-44d1-bae3-2251b5e10a57" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6bbdd2e7-ac40-45e2-b8f5-189c8a1d22b3" name="Reset Status" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="516d4b0a-afe5-4045-a6db-83f0e3075696" />
+        <extendedCases>
+          <extend Id="9748cf3f-3072-4513-8cf3-3f0e42a906a3">
+            <useCaseMoniker Id="162fcddf-c440-4b97-8d60-93cf580b3e13" LastKnownName="Job Application" />
+            <elementDefinition Id="129980a5-8332-49c5-94de-c29c17bc60bd" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="571385b8-b34b-41ea-b6f1-2b0e0fbfcc15" name="UmlDiagrams">
+    <elementDefinition Id="ee6fa919-babe-41a8-9da4-d381d5c2bc5a" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,44 @@
+﻿@model IEnumerable<JobAppMgr.ViewModels.EventListviewModel>
+
+<div class="table">
+    <div class="tableHeader">
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.TypeName)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.Date)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.Details)
+        </div>
+        <div class="tableColumnHeader">
+            @Html.DisplayNameFor(model => model.Attachment)
+        </div>
+    </div>
+
+@foreach (var item in Model) {
+    <div class="tableRow">
+        <div class="tableColumn">
+            @Html.DisplayFor(modelItem => item.TypeName)
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(modelItem => item.Date)
+        </div>
+        <div class="tableColumn">
+            @Html.DisplayFor(modelItem => item.Details)
+        </div>
+        <div class="tableColumn">
+            @Html.HiddenFor(modelItem => item.Attachment)
+            @*@Html.DisplayFor(modelItem => item.Attachment)*@
+            @if (!string.IsNullOrEmpty(item.Attachment))
+            {
+                <a href="@item.Attachment" title="@Path.GetFileName(item.Attachment)">
+                    <img src="@Url.Content("~/images/clip.png")" alt="@Path.GetFileName(item.Attachment)"/>
+                </a>
+            }
+        </div>
+    </div>
+}
+
+</div>
+

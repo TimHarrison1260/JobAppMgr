@@ -1,0 +1,60 @@
+﻿@using System.Web.UI.HtmlControls
+@model JobAppMgr.ViewModels.AddOrganisationContactsViewModel<JobAppMgr.ViewModels.AgencyViewModel>
+
+@{
+    ViewBag.Title = "Add Contact";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+        </div>
+    </section>
+}
+
+<div>
+    @Html.DisplayFor(model => model.Organisation.Name)
+    @Html.DisplayFor(model => model.Organisation.Address)
+    @Html.DisplayFor(model => model.Organisation.PostCode)
+</div>
+<div>
+    @Html.Partial("ContactListPartialDiv", Model.Organisation.Contacts)
+</div>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>AddOrganisationContactsViewModel</legend>
+        
+        @Html.HiddenFor(model => model.Organisation.Name)
+        @Html.HiddenFor(model => model.Organisation.Address)
+        @Html.HiddenFor(model => model.Organisation.PostCode)
+
+        <div>
+            @Html.HiddenFor(model => model.Organisation.Id)
+            @Html.LabelFor(model => model.ContactId)
+        </div>
+        <div>
+            @*@Html.HiddenFor(model => model.ContactId)*@
+            @Html.DropDownListFor(model => model.ContactId, Model.AvailableContacts, "Please select a contact...")
+            @Html.ValidationMessageFor(model => model.ContactId)
+        </div>
+        
+        <div class="linkButton">
+            <p>
+                <input type="submit" value="Save" />
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div>
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
